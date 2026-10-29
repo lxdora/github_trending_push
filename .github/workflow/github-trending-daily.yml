@@ -29,6 +29,6 @@ jobs:
       - name: Run GitHub Trending push
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
-          WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
-          # 如果你只想启用其中一个通道，可以把另一个留空，脚本会自动跳过
+          WECOM_BOT_ID: ${{ secrets.WECOM_BOT_ID }}           # 新：智能机器人 BotID
+          WECOM_BOT_SECRET: ${{ secrets.WECOM_BOT_SECRET }}
         run: python scripts/github_trending_push.py
