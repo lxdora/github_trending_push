@@ -50,7 +50,7 @@ PERIODS = [
     ("monthly", "月榜", "Monthly"),
 ]
 
-MAX_REPOS = 10  # 每个榜单取前 N 个
+MAX_REPOS = 5  # 每个榜单取前 N 个
 
 
 # =========================
